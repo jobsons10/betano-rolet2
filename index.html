@@ -30,6 +30,11 @@
     50% {    transform: scale3d(1.05, 1.05, 1.05)  }
     to {    transform: scaleX(1)  }
 }
+
+        @font-face {
+            font-family: 'Exo';
+            src: url('./fonts/Exo2-VariableFont_wght.ttf');
+        }
         @font-face {
             font-family: KelsonSans-BoldRU;
             src: url('./fonts/KelsonSans-Bold.eot');
@@ -2502,7 +2507,7 @@
 
   form{
     font-family: 'Montserrat', sans-serif;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -2517,9 +2522,18 @@
     color: #fff;
     text-transform: uppercase;
     font-family: 'Exo-bold';
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 650px){
+    ._form-title {
+        margin-bottom: 10px;
+    }
+  }
+  form input{
+    margin-bottom: 16px;
   }
   ._form-title span{
-    color: #b51818;
+    color: #ffef47;
     display: block;
   }
   ._form-subtitle{
@@ -2712,7 +2726,7 @@
             <div id="level-1">
                 <div class="dialog" id="dialog">
                     <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.8.0/dist/js-confetti.browser.js"></script>
-                    <div class="dialog__content" id="conteiner">
+                    <div class="dialog__content" style="display: flex; width: 600px; height: 550px; flex-direction: column;" id="conteiner">
                         <div style="font-size: 45px; color: #ffef47;" class="main-dialog-header">Parabéns!</div>
                         <div class="second-dialog-header" style="margin-bottom: 15px; padding-inline: 15px;">Você ganhou o multiplicador até:</div>
                         <div style="transform: scale(1.5); margin-block: 20px;" class="dialog__content__coins">
@@ -2751,7 +2765,7 @@
             </div>
         
             <div id="level-2">
-                <div class="dialogA" id="dialog2">
+                <div class="dialog" id="dialog2">
                     <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.8.0/dist/js-confetti.browser.js"></script>
                     <div class="dialog__content" id="conteiner2">
                            <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -2766,10 +2780,10 @@
                                  <input type="hidden" name="v" value="2" />
                                  <input type="hidden" name="or" value="a3ed6f7c90077266e2efa51dead6dab0" />
                                  <div class="_form-content" style="
-                                    padding: 30px 25px;
+                                    padding: 0px 25px 30px 25px;
                                  ">
                                    <div class="_form_element _x22953207 _full_width _clear" >
-                                     <div class="_form-title" style="font-family: 'Montserrat'; font-size: 24px; text-align: center;">
+                                     <div class="_form-title" style="font-family: 'Exo'; font-weight: bold; font-size: 21px; text-align: center;">
                                        PARABÉNS VOCÊ GANHOU<span>R$ 300,00 + UM SUPER PRESENTE!</span>
                                      </div>
                                    </div>
